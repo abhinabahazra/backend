@@ -1,0 +1,340 @@
+//================ LIVE setup ================
+###
+POST http://localhost:8082/admin_chk
+content-type: application/json
+
+
+//========== new API list =============
+###
+POST http://localhost:8082/api/google_login
+content-type: application/json
+
+{
+	"first_name":"Subham",
+	"last_name":"Paul",
+	"email":"subham321@gmail.com",
+	"googleId":"gid-subham321@gmail.com",
+	"profile_pic":"https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+}
+###
+POST http://localhost:8082/api/otp_login
+content-type: application/json
+
+{
+	"mobile":"7003264773"
+}
+###
+POST http://localhost:8082/api/user_signup
+content-type: application/json
+
+{
+	"type":"both",
+	"first_name":"Pradip",
+	"last_name":"Jana",
+	"password":"Pj1@123456",
+	"email":"pradip123@gmail.com",
+	"phone":"1111111120",
+	"usertype":2
+}
+###
+POST http://localhost:8082/api/user_signin
+content-type: application/json
+
+{
+	"username":"saumya2.parui@gmail.com",
+	"password":"Aa@12345678",
+	"usertype":3
+}
+###
+POST http://localhost:8082/api/forgot_password
+content-type: application/json
+
+{
+	"user_email":"pradip.parui@gmail.com",
+	"new_password":"Pj@123457"
+}
+###
+POST http://localhost:8082/api/logout
+
+{
+	"token":""
+}
+###
+GET http://localhost:8082/api/get_Movie_List
+content-type: application/json
+###
+POST http://localhost:8082/api/checkemail
+content-type: application/json
+
+{
+	"email":"saumya2.parui@gmail.com"
+}
+
+###
+GET http://localhost:8082/api/verifyemail/39_2021-04-06 00:05:27
+content-type: application/json
+###
+POST http://localhost:8082/api/checkSMS
+content-type: application/json
+
+{
+	"phone":"9830829977",
+	"otp":"2211"
+}
+###
+GET http://localhost:8082/api/user_type_list
+content-type: application/json
+###
+GET http://localhost:8082/api/movie_category_list
+content-type: application/json
+###
+GET http://localhost:8082/api/movie_language_list
+content-type: application/json
+###
+
+
+
+###
+GET http://localhost:8082/api/genre_user_list
+content-type: application/json
+###
+POST http://localhost:8082/api/add_movie
+content-type: application/json
+
+{
+	"movie_id": "246",
+	"movie_title": "War's on Iraq 123345",
+	"movie_category": "3",
+    "movie_genre":"1",
+    "director":"Subham's Paul",
+    "producer":"Magnox's Tech",
+    "publication":"Magnox's",
+    "synopsis":"India's No.1 Action movie",
+	"movie_language": "4",
+	"length_min": "128",
+	"release_date": "2021-05-13",
+	"user_created":"subhamp614@gmail.com",
+    "subtitle":"No"
+}
+###
+POST http://localhost:8082/api/add_movie_links
+content-type: application/json
+
+{
+	"num_movie_id": "28",
+	"txt_banner1": "Ban 111",
+	"txt_banner2": "Ban 2222",
+	"txt_screenshot1": "screen shot JPG",
+	"txt_screenshot2": "screen shot 222 JPG",
+	"txt_screenshot3": "screen shot 333 JPG",
+	"txt_screenshot4": "screen shot 444 JPG",
+	"txt_trailer1": "Trail 111  MP",
+	"txt_trailer2": "Trail 222  MP",
+	"txt_movie": "MOvie MP"
+}
+###
+POST http://localhost:8082/api/get_tran_by_id
+content-type: application/json
+
+{
+	"num_user_id": "164",
+	"num_movie_id": "265"
+}
+###
+POST http://localhost:8082/api/add_movie_player
+content-type: application/json
+
+{
+	"movie_id":244,
+    "player_name_1":"Sonu s@#oo,d",
+    "player_name_role_1":"he!@$r'o",
+    "player_name_2":"Shy##'am",
+    "player_name_role_2":"heroin791e",
+    "player_name_3":"Rakhi's",
+    "player_name_role_3":"hero2's",
+    "player_name_4":"Rakhis",
+    "player_name_role_4":"hero2's"
+}
+###
+POST http://localhost:8082/api/add_movie_cast
+content-type: application/json
+
+{
+	"movie_id":239,
+    "cast_1":"drrrs'eaaa",
+    "cast_2":"e'saaa",
+    "cast_3":"q'saaa",
+    "cast_4":"qdssaaa",
+    "launch_event":"0"
+}
+###
+POST http://localhost:8082/api/add_movie_contract
+content-type: application/json
+
+{
+	"movie_id":239,
+    "producer_percentage":"60",
+    "admin_percentage":"40",
+    "user":"c"
+}
+###
+POST http://localhost:8082/api/forgot_password_link
+content-type: application/json
+
+{
+	"user_email":"abhinabahazra960@gmail.com"
+}
+###
+POST http://localhost:8082/api/change_password_id
+content-type: application/json
+
+{
+	"num_user_id":"116",
+	"new_password":"Subham_p@123",
+	"old_password":"Subham@123"
+}
+###
+POST http://localhost:8082/api/otp_sent
+content-type: application/json
+
+{
+	"mobile":"6295622133"
+}
+###
+POST http://localhost:8082/api/otp_check
+content-type: application/json
+
+{
+	"mobile":"9830829977"
+}
+
+###
+POST http://localhost:8082/api/get_Save_Movie
+content-type: application/json
+
+{
+	"producer_email":"suvayan.job@gmail.com"
+}
+
+###
+POST http://localhost:8082/api/getHomeMovieDetailsByCategory
+content-type: application/json
+
+{
+	"id":6
+}
+
+###
+POST http://localhost:8082/api/get_Draft_Movie
+content-type: application/json
+
+{
+	"producer_email":"subhamp614@gmail.com"
+}
+###
+POST http://localhost:8082/api/user_refer
+content-type: application/json
+###
+POST http://localhost:8082/api/share_with
+content-type: application/json
+
+{
+	"sent_email":"saumya2.parui@gmail.com",
+	"num_user_id":"166"
+}
+###
+POST http://localhost:8082/api/insert_transaction
+content-type: application/json
+
+{
+	"num_amount": "110",
+	"payment_id": "PID123422",
+	"order_id": "OD123422",
+	"transaction_signature": "TRAN123422",
+	"num_user_id": "165",
+	"num_movie_id":"250"
+}
+###
+POST http://localhost:8082/api/refer_tran_id
+content-type: application/json
+
+{
+	"num_user_id":"62"
+}
+###
+POST http://localhost:8082/api/give_feedback
+content-type: application/json
+
+{
+	"user_email":"abhinaba34@gmail.com",
+	"user_feedback":"this is feedback 2nd"
+}
+###
+POST http://localhost:8082/api/user_feedback
+content-type: application/json
+
+{
+	"first_name":"Abhinaba",
+	"last_name":"adadadad",
+	"phone":"7896541288",
+	"feedback":"Abhi feedback adadada",
+	"txt_emailid":"123@gmail.com"
+}
+###
+POST http://localhost:8082/api/give_rating
+content-type: application/json
+
+{
+	"user_id":"72",
+	"movie_id":"150",
+	"movie_rating":"3",
+	"user_feedback":"this is feedback rating 2nd time"
+}
+
+###
+GET http://localhost:8082/api/get_all_active_movie_list
+content-type: application/json
+
+###
+GET http://localhost:8082/api/get_all_active_previous_movie_list
+content-type: application/json
+
+###
+GET http://localhost:8082/api/get_all_livecast_movie
+content-type: application/json
+
+###
+GET http://localhost:8082/api/get_all_previous_cast_movie
+content-type: application/json
+
+###
+GET http://localhost:8082/api/all_livecast_movie
+content-type: application/json
+
+###
+POST http://localhost:8082/api/getHomeMovieDetailsByCategoryIdandText
+content-type: application/json
+{
+	
+    "movie_title":"suvayan",
+    "id":2
+}
+
+###
+GET https://www.api3.digimovieplex.com/api/get_All_Livecast_link
+content-type: application/json
+
+###
+POST http://localhost:8082/api/verify_phone
+content-type: application/json
+
+{
+	"num_user_id": "370"
+}
+###
+POST http://localhost:8082/api/otp_check
+content-type: application/json
+
+{
+	"mobile":"9830829977"
+}
